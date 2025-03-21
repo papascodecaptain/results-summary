@@ -1,15 +1,51 @@
 
+body{
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+background-color: black;
+}
 
+.main-component{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 375px;
+    width:100%;
+    padding:1.5rem;
+    border-radius: 5px;
+}
 
+.left-container{
+    background-color :hsl(234, 85%, 45%);
+    color:white;
+    border-radius:10px;
+    padding:0px;
+    text-align:center;
+}
 
-
+.right-container{
+    background-color: white;
+    color:#343434;
+    padding:1.5rem;
+}
 
 
 
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 100%; /* Ensure it spans the full width */
+    background-color: hsl(0, 0%, 8%); /* Match the body background */
+    padding: 10px 0; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 

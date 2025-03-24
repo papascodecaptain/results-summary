@@ -1,11 +1,21 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+
+
 body {
     display: flex;
     flex-direction: row wrap;
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background-color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400; or any value between 100 and 900;
 }
 
 .main-component {
@@ -13,8 +23,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    max-width: 700px;
-    height:455px;
+    max-width: 620px;
+    height:430px;
+    width:200px;
     width: 100%;
     padding: 0;
     background-color: white;
@@ -26,7 +37,7 @@ body {
 }
 
 .left-container {
-    background-color: hsl(252, 71%, 55%);
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
     color: white;
     border-radius: 10px 10px 10px 10px;
     padding: 1.5rem;
@@ -44,6 +55,60 @@ body {
     border-radius: 0 10px 10px 0;
 }
 
+
+
+
+
+h1{
+font-size:1.3rem;
+font-weight: 500;
+margin-bottom:2rem;
+color: rgba(255, 255, 255, 0.826);
+}
+
+
+.result-container{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius:50%;
+    width:160px;
+    height:160px;
+    font-weight:600;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden; 
+}
+
+.result{
+    font-size:3.5rem;
+    font-weight:580;
+    color:white
+    
+}
+
+.max-result{
+    font-size:.8rem;
+    color: rgba(255, 255, 255, 0.327);
+}
+ h2{
+font-size:24px;
+margin-bottom:0;
+font-weight: 500;
+ }
+
+ p{
+    font-size:14px;
+    color: rgba(255, 255, 255, 0.516);
+    padding:0 2rem 0 2rem ;
+    font-weight:500;
+ }
+
+ .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -52,50 +117,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: hsl(0, 0%, 8%);
+    background-color: hsl(221, 100%, 96%);
     padding: 10px 0; 
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
 
 
 
-h1{
-font-size:1.2rem;
-font-weight: 500;
-}
-
-.result-container{
-    background-color:rgb(64, 64, 196);
-    padding:10px;
-    border-radius:50%;
-    width:150px;
-    height:150px;
-    font-size:2.0rem;
-    text-align: center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin:1rem; 
-}
-
-.result{
-    margin-bottom:1.2px;
-}
-
-.max-result{
-    font-size:10px;
-}
- h2{
-font-size:24px;
- }
-
- p{
-    font-size:14px;
- }
 @media (max-width: 600px) {
     .main-component {
         flex-direction: column;
@@ -114,3 +142,8 @@ font-size:24px;
         border-radius: 0 0 10px 10px;
     }
 }
+
+
+
+
+
